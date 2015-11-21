@@ -307,19 +307,19 @@ style "murrine-vscrollbar" = "murrine-scrollbar" { }
 # Menus
 
 style "murrine-menu" = "murrine-thin" {
-	bg[NORMAL] = @menu_bg_color
+	bg[NORMAL] = @base_color
 	bg[PRELIGHT] = @selected_bg_color
 	bg[SELECTED] = @selected_bg_color
-	bg[ACTIVE] = @menu_bg_color
-	bg[INSENSITIVE] = @menu_bg_color
+	bg[ACTIVE] = @base_color
+	bg[INSENSITIVE] = @base_color
 
-	fg[NORMAL] = @menu_fg_color
+	fg[NORMAL] = @fg_color
 	fg[PRELIGHT] = @selected_fg_color
 	fg[SELECTED] = @selected_fg_color
 	fg[ACTIVE] = @selected_fg_color
-	fg[INSENSITIVE] = mix (0.5, @menu_bg_color, @menu_fg_color)
+	fg[INSENSITIVE] = mix (0.5, @base_color, @fg_color)
 
-	text[NORMAL] = @menu_fg_color
+	text[NORMAL] = @fg_color
 	text[PRELIGHT] = @selected_fg_color
 	text[SELECTED] = @selected_fg_color
 	text[ACTIVE] = @selected_fg_color
@@ -335,7 +335,7 @@ style "murrine-menu-item" = "murrine-wider" {
 	bg[SELECTED] = @selected_bg_color
 	bg[ACTIVE] = @selected_bg_color
 
-	fg[NORMAL] = @menu_fg_color # Fix for XFCE menu text
+	fg[NORMAL] = @fg_color # Fix for XFCE menu text
 	fg[PRELIGHT] = @selected_fg_color
 	fg[SELECTED] = @selected_fg_color
 	fg[ACTIVE] = @selected_fg_color
