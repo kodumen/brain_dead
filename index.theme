@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=brain_dead
+Comment=A Numix modification
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=brain_dead
+MetacityTheme=brain_dead
+ButtonLayout=:minimize,maximize,close
