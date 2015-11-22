@@ -433,13 +433,13 @@ style "murrine-panel" = "murrine-thin" {
 	bg[NORMAL] = @panel_bg_color
 	bg[PRELIGHT] =  mix (0.21, @panel_fg_color, @panel_bg_color)
 	bg[SELECTED] =  mix (0.21, @panel_fg_color, @panel_bg_color)
-	bg[ACTIVE] = shade (0.8, @panel_bg_color)
+	bg[ACTIVE] = @selected_bg_color
 	bg[INSENSITIVE] = @panel_bg_color
 
 	fg[NORMAL] = @panel_fg_color
 	fg[PRELIGHT] = shade (1.08, @panel_fg_color)
 	fg[SELECTED] = shade (1.08, @panel_fg_color)
-	fg[ACTIVE] = @panel_fg_color
+	fg[ACTIVE] = @selected_fg_color
 	fg[INSENSITIVE] = mix (0.5, @panel_bg_color, @panel_fg_color)
 
 	base[NORMAL] = @panel_bg_color
